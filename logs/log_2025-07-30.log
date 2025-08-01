@@ -1,0 +1,8 @@
+2025-07-30 12:45:45,113 - INFO - Succesfully read the YAML file
+2025-07-30 12:45:45,113 - INFO - Initialized DataIngestion with bucket: game-reco and files: ['steam-200k.csv', 'steam.csv', 'steam_description_data.csv']
+2025-07-30 12:45:45,113 - INFO - Starting data ingestion process...
+2025-07-30 12:45:48,795 - INFO - Downloaded steam-200k.csv to artifacts/raw\steam-200k.csv
+2025-07-30 12:45:52,903 - INFO - Downloaded steam.csv to artifacts/raw\steam.csv
+2025-07-30 12:46:05,189 - INFO - Downloaded steam_description_data.csv to artifacts/raw\steam_description_data.csv
+2025-07-30 12:46:05,189 - INFO - Data ingestion completed successfully.
+2025-07-30 12:46:05,189 - INFO - Data ingestion process finished.

@@ -1,0 +1,13 @@
+data_ingestion:
+  bucket_name: "game-reco"
+  bucket_file_names:
+    - "steam-200k.csv"
+    - "steam.csv"
+    - "steam_description_data.csv"
+
+model:
+  embedding_size: 128
+  loss: binary_crossentropy
+  optimizer: Adam
+  metrics: ["mae"]
+  

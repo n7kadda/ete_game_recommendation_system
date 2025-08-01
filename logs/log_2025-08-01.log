@@ -1,0 +1,528 @@
+2025-08-01 00:22:25,280 - INFO - Initialized DataPreprocessor with interaction file: artifacts/raw\steam-200k.csv and metadata file: artifacts/raw\steam.csv
+2025-08-01 00:22:25,280 - INFO - Loading interaction data...............
+2025-08-01 00:26:20,164 - INFO - Initialized DataPreprocessor with interaction file: artifacts/raw\steam-200k.csv and metadata file: artifacts/raw\steam.csv
+2025-08-01 00:26:20,164 - INFO - Loading interaction data...............
+2025-08-01 00:28:07,723 - INFO - Initialized DataPreprocessor with interaction file: artifacts/raw\steam-200k.csv and metadata file: artifacts/raw\steam.csv
+2025-08-01 00:28:07,724 - INFO - Loading interaction data...............
+2025-08-01 00:28:07,863 - INFO - Loading metadata data...............
+2025-08-01 00:28:08,042 - INFO - Merging interaction and metadata data...............
+2025-08-01 00:28:08,061 - INFO - Merged data shape: (36302, 5)
+2025-08-01 00:28:08,061 - INFO - Creating ratings data...............
+2025-08-01 00:28:08,081 - INFO - Encoding and splitting data...............
+2025-08-01 00:28:08,094 - INFO - Splitting data...............
+2025-08-01 00:28:08,098 - INFO - Saving artifacts...............
+2025-08-01 00:28:08,289 - INFO - All artifacts saved successfully............
+2025-08-01 00:28:08,290 - INFO - Data Processing successfully completed
+2025-08-01 00:32:54,631 - INFO - Initialized DataPreprocessor with interaction file: artifacts/raw\steam-200k.csv and metadata file: artifacts/raw\steam.csv
+2025-08-01 00:32:54,631 - INFO - Loading interaction data...............
+2025-08-01 00:32:54,762 - INFO - Loading metadata data...............
+2025-08-01 00:32:54,909 - INFO - Merging interaction and metadata data...............
+2025-08-01 00:32:54,925 - INFO - Merged data shape: (36302, 5)
+2025-08-01 00:32:54,925 - INFO - Creating ratings data...............
+2025-08-01 00:32:54,941 - INFO - Encoding and splitting data...............
+2025-08-01 00:32:54,951 - INFO - Splitting data...............
+2025-08-01 00:32:54,955 - INFO - Saving artifacts...............
+2025-08-01 00:32:55,177 - INFO - All artifacts saved successfully............
+2025-08-01 00:32:55,178 - INFO - Data Processing successfully completed
+2025-08-01 14:27:38,253 - INFO - Initialized ModelTrainer with data path: artifacts/processed
+2025-08-01 14:27:38,254 - INFO - Loading data...............
+2025-08-01 14:27:38,319 - INFO - Data loaded successfully for training.
+2025-08-01 14:27:38,368 - INFO - Succesfully read the YAML file
+2025-08-01 14:27:38,368 - INFO - Model configuration loaded successfully
+2025-08-01 14:27:38,671 - INFO - RecommenderNet model compiled successfully
+2025-08-01 14:27:40,647 - ERROR - Error training model: Graph execution error:
+
+Detected at node functional_1/game_embedding_1/GatherV2 defined at (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 116, in <module>
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 70, in train_model
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 133, in multi_step_on_iterator
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 114, in one_step_on_data
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 58, in train_step
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 183, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\function.py", line 206, in _run_through_graph
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 644, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\core\embedding.py", line 150, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\numpy.py", line 5795, in take
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\numpy.py", line 2340, in take
+
+indices[0,0] = 1110 is not in [0, 0)
+	 [[{{node functional_1/game_embedding_1/GatherV2}}]] [Op:__inference_multi_step_on_iterator_1336]
+2025-08-01 14:27:40,647 - ERROR - Error during model training: CustomException.__init__() missing 1 required positional argument: 'error_detail'
+2025-08-01 14:32:29,189 - INFO - Initialized ModelTrainer with data path: artifacts/processed
+2025-08-01 14:32:29,190 - INFO - Loading data...............
+2025-08-01 14:32:29,192 - INFO - Data loaded successfully for training.
+2025-08-01 14:32:29,208 - INFO - Succesfully read the YAML file
+2025-08-01 14:32:29,208 - INFO - Model configuration loaded successfully
+2025-08-01 14:32:29,288 - INFO - RecommenderNet model compiled successfully
+2025-08-01 14:32:30,146 - ERROR - Error training model: Graph execution error:
+
+Detected at node functional_1/game_embedding_1/GatherV2 defined at (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 118, in <module>
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 71, in train_model
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 133, in multi_step_on_iterator
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 114, in one_step_on_data
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 58, in train_step
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 183, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\function.py", line 206, in _run_through_graph
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 644, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\core\embedding.py", line 150, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\numpy.py", line 5795, in take
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\numpy.py", line 2340, in take
+
+indices[0,0] = 13 is not in [0, 0)
+	 [[{{node functional_1/game_embedding_1/GatherV2}}]] [Op:__inference_multi_step_on_iterator_1336]
+2025-08-01 14:32:30,150 - ERROR - Error during model training: Error in E:\MLPracops\projects\ete_game_reco\src\model_training.py , line 71 : Graph execution error:
+
+Detected at node functional_1/game_embedding_1/GatherV2 defined at (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 118, in <module>
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 71, in train_model
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 133, in multi_step_on_iterator
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 114, in one_step_on_data
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 58, in train_step
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 183, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\function.py", line 206, in _run_through_graph
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 644, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\core\embedding.py", line 150, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\numpy.py", line 5795, in take
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\numpy.py", line 2340, in take
+
+indices[0,0] = 13 is not in [0, 0)
+	 [[{{node functional_1/game_embedding_1/GatherV2}}]] [Op:__inference_multi_step_on_iterator_1336]
+2025-08-01 14:38:40,929 - INFO - Initialized DataPreprocessor with interaction file: artifacts/raw\steam-200k.csv and metadata file: artifacts/raw\steam.csv
+2025-08-01 14:38:40,929 - INFO - Loading interaction data...............
+2025-08-01 14:38:41,120 - INFO - Loading metadata data...............
+2025-08-01 14:38:41,297 - INFO - Merging interaction and metadata data...............
+2025-08-01 14:38:41,373 - INFO - Merged data shape: (36675, 6)
+2025-08-01 14:38:41,373 - INFO - Creating ratings data...............
+2025-08-01 14:38:41,392 - INFO - Encoding and splitting data...............
+2025-08-01 14:38:41,409 - INFO - Splitting data...............
+2025-08-01 14:38:41,415 - INFO - Saving artifacts...............
+2025-08-01 14:38:41,752 - INFO - All artifacts saved successfully............
+2025-08-01 14:38:41,752 - INFO - Data Processing successfully completed
+2025-08-01 14:38:53,373 - INFO - Initialized ModelTrainer with data path: artifacts/processed
+2025-08-01 14:38:53,374 - INFO - Loading data...............
+2025-08-01 14:38:53,433 - INFO - Data loaded successfully for training.
+2025-08-01 14:38:53,480 - INFO - Succesfully read the YAML file
+2025-08-01 14:38:53,480 - INFO - Model configuration loaded successfully
+2025-08-01 14:38:53,590 - INFO - RecommenderNet model compiled successfully
+2025-08-01 14:38:54,868 - ERROR - Error training model: Graph execution error:
+
+Detected at node functional_1/game_embedding_1/GatherV2 defined at (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 118, in <module>
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 71, in train_model
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 133, in multi_step_on_iterator
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 114, in one_step_on_data
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 58, in train_step
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 183, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\function.py", line 206, in _run_through_graph
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 644, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\core\embedding.py", line 150, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\numpy.py", line 5795, in take
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\numpy.py", line 2340, in take
+
+indices[0,0] = 13 is not in [0, 0)
+	 [[{{node functional_1/game_embedding_1/GatherV2}}]] [Op:__inference_multi_step_on_iterator_1336]
+2025-08-01 14:38:54,869 - ERROR - Error during model training: Error in E:\MLPracops\projects\ete_game_reco\src\model_training.py , line 71 : Graph execution error:
+
+Detected at node functional_1/game_embedding_1/GatherV2 defined at (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 118, in <module>
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 71, in train_model
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 133, in multi_step_on_iterator
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 114, in one_step_on_data
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 58, in train_step
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 183, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\function.py", line 206, in _run_through_graph
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 644, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\core\embedding.py", line 150, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\numpy.py", line 5795, in take
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\numpy.py", line 2340, in take
+
+indices[0,0] = 13 is not in [0, 0)
+	 [[{{node functional_1/game_embedding_1/GatherV2}}]] [Op:__inference_multi_step_on_iterator_1336]
+2025-08-01 14:43:36,638 - INFO - Initialized DataPreprocessor with interaction file: artifacts/raw\steam-200k.csv and metadata file: artifacts/raw\steam.csv
+2025-08-01 14:43:36,638 - INFO - Loading interaction data...............
+2025-08-01 14:43:36,786 - INFO - Loading metadata data...............
+2025-08-01 14:43:36,945 - INFO - Merging interaction and metadata data...............
+2025-08-01 14:43:37,009 - INFO - Merged data shape: (36675, 6)
+2025-08-01 14:43:37,010 - INFO - Creating ratings data...............
+2025-08-01 14:43:37,029 - INFO - Encoding and splitting data...............
+2025-08-01 14:43:37,045 - INFO - Splitting data...............
+2025-08-01 14:43:37,049 - INFO - Saving artifacts...............
+2025-08-01 14:43:37,381 - INFO - All artifacts saved successfully............
+2025-08-01 14:43:37,382 - INFO - Data Processing successfully completed
+2025-08-01 14:43:59,788 - INFO - Initialized ModelTrainer with data path: artifacts/processed
+2025-08-01 14:43:59,788 - INFO - Loading data...............
+2025-08-01 14:43:59,835 - INFO - Data loaded successfully for training.
+2025-08-01 14:43:59,869 - INFO - Succesfully read the YAML file
+2025-08-01 14:43:59,869 - INFO - Model configuration loaded successfully
+2025-08-01 14:43:59,968 - INFO - RecommenderNet model compiled successfully
+2025-08-01 14:44:01,289 - ERROR - Error training model: Graph execution error:
+
+Detected at node functional_1/game_embedding_1/GatherV2 defined at (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 118, in <module>
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 71, in train_model
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 133, in multi_step_on_iterator
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 114, in one_step_on_data
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 58, in train_step
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 183, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\function.py", line 206, in _run_through_graph
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 644, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\core\embedding.py", line 150, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\numpy.py", line 5795, in take
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\numpy.py", line 2340, in take
+
+indices[0,0] = 547 is not in [0, 0)
+	 [[{{node functional_1/game_embedding_1/GatherV2}}]] [Op:__inference_multi_step_on_iterator_1336]
+2025-08-01 14:44:01,289 - ERROR - Error during model training: Error in E:\MLPracops\projects\ete_game_reco\src\model_training.py , line 71 : Graph execution error:
+
+Detected at node functional_1/game_embedding_1/GatherV2 defined at (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 118, in <module>
+
+  File "E:\MLPracops\projects\ete_game_reco\src\model_training.py", line 71, in train_model
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 133, in multi_step_on_iterator
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 114, in one_step_on_data
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 58, in train_step
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 183, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\function.py", line 206, in _run_through_graph
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\models\functional.py", line 644, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\layer.py", line 941, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\operation.py", line 59, in __call__
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 156, in error_handler
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\layers\core\embedding.py", line 150, in call
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\ops\numpy.py", line 5795, in take
+
+  File "E:\MLPracops\projects\ete_game_reco\venv\Lib\site-packages\keras\src\backend\tensorflow\numpy.py", line 2340, in take
+
+indices[0,0] = 547 is not in [0, 0)
+	 [[{{node functional_1/game_embedding_1/GatherV2}}]] [Op:__inference_multi_step_on_iterator_1336]
+2025-08-01 14:47:31,856 - INFO - Initialized DataPreprocessor...
+2025-08-01 14:47:31,856 - INFO - Loading interaction data...
+2025-08-01 14:47:31,964 - INFO - Loading metadata data...
+2025-08-01 14:47:32,080 - INFO - Merging interaction and metadata data...
+2025-08-01 14:47:32,280 - INFO - Merged data shape: (54542, 6)
+2025-08-01 14:47:32,281 - INFO - Creating ratings data...
+2025-08-01 14:47:32,303 - INFO - Encoding and splitting data...
+2025-08-01 14:47:32,318 - INFO - Saving artifacts...
+2025-08-01 14:47:32,734 - INFO - All artifacts saved successfully.
+2025-08-01 14:47:32,735 - INFO - Data Processing successfully completed
+2025-08-01 14:47:44,552 - INFO - Initialized ModelTrainer with data path: artifacts/processed
+2025-08-01 14:47:44,552 - INFO - Loading data...............
+2025-08-01 14:47:44,580 - INFO - Data loaded successfully for training.
+2025-08-01 14:47:44,617 - INFO - Succesfully read the YAML file
+2025-08-01 14:47:44,617 - INFO - Model configuration loaded successfully
+2025-08-01 14:47:44,693 - INFO - RecommenderNet model compiled successfully
+2025-08-01 14:52:31,381 - INFO - Model training Completedd.....
+2025-08-01 14:52:31,381 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-01 14:52:31,411 - INFO - Model weights saved successfully.
+2025-08-01 14:52:31,416 - INFO - Weights extracted successfully for layer: user_embedding
+2025-08-01 14:52:31,418 - INFO - Weights extracted successfully for layer: game_embedding
+2025-08-01 14:52:31,423 - INFO - User and game weights saved successfully.
+2025-08-01 15:07:12,839 - INFO - Initialized ModelTrainer and comet ml with data path: artifacts/processed
+2025-08-01 15:07:12,840 - INFO - Loading data...............
+2025-08-01 15:07:12,847 - INFO - Data loaded successfully for training.
+2025-08-01 15:07:12,874 - INFO - Succesfully read the YAML file
+2025-08-01 15:07:12,874 - INFO - Model configuration loaded successfully
+2025-08-01 15:07:13,151 - INFO - RecommenderNet model compiled successfully
+2025-08-01 15:13:32,051 - INFO - Model training Completedd.....
+2025-08-01 15:13:32,053 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-01 15:13:32,116 - INFO - Model weights saved successfully.
+2025-08-01 15:13:32,128 - INFO - Weights extracted successfully for layer: user_embedding
+2025-08-01 15:13:32,130 - INFO - Weights extracted successfully for layer: game_embedding
+2025-08-01 15:13:32,193 - INFO - User and game weights saved successfully.
+2025-08-01 19:02:39,803 - INFO - Initialized DataPreprocessor...
+2025-08-01 19:02:39,803 - INFO - Loading interaction data...
+2025-08-01 19:02:40,189 - INFO - Loading metadata data...
+2025-08-01 19:02:40,497 - INFO - Merging interaction and metadata data...
+2025-08-01 19:02:40,868 - INFO - Merged data shape: (54542, 6)
+2025-08-01 19:02:40,868 - INFO - Creating ratings data...
+2025-08-01 19:02:40,912 - INFO - Encoding and splitting data...
+2025-08-01 19:02:40,947 - INFO - Saving artifacts...
+2025-08-01 19:02:41,554 - INFO - All artifacts saved successfully.
+2025-08-01 19:02:41,554 - INFO - Data Processing successfully completed
+2025-08-01 19:02:49,558 - INFO - Initialized ModelTrainer and comet ml with data path: artifacts/processed
+2025-08-01 19:02:49,558 - INFO - Loading data...............
+2025-08-01 19:02:49,623 - INFO - Data loaded successfully for training.
+2025-08-01 19:02:49,696 - INFO - Succesfully read the YAML file
+2025-08-01 19:02:49,697 - INFO - Model configuration loaded successfully
+2025-08-01 19:02:49,953 - INFO - RecommenderNet model compiled successfully
+2025-08-01 19:08:34,752 - INFO - Model training Completedd.....
+2025-08-01 19:08:34,761 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-01 19:08:34,885 - INFO - Model weights saved successfully.
+2025-08-01 19:08:34,897 - INFO - Weights extracted successfully for layer: user_embedding
+2025-08-01 19:08:34,900 - INFO - Weights extracted successfully for layer: game_embedding
+2025-08-01 19:08:34,958 - INFO - User and game weights saved successfully.

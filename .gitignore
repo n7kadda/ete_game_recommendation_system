@@ -1,0 +1,7 @@
+venv/
+artifacts/raw/
+artifacts/processed/
+artifacts/models/
+artifacts/weights/
+artifacts/checkpoints/
+Game_Recommendation_System.egg-info/
