@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: game-app-container
-        image: gcr.io/game-reco/game-reco-system:latest
+        image: gcr.io/game-reco/game-project:latest
         ports:
         - containerPort: 5000  # Replace with the port your app listens on
 ---
