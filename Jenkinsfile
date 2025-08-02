@@ -13,7 +13,7 @@ pipeline{
             steps{
                 script{
                     echo 'Cloning the repository from Github'
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/n7kadda/ete_game_recommendation_system.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-key', url: 'https://github.com/n7kadda/ete_game_recommendation_system.git']])
                 }
             }
         }
