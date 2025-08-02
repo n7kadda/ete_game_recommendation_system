@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: game-app
+  template:
+    metadata:
+      labels:
+        app: game-app
+    spec:
+      containers:
+      - name: game-app-container
+        image: gcr.io/game-reco/game-reco-system:latest
+        ports:
+        - containerPort: 5000  # Replace with the port your app listens on
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: game-app-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: game-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
