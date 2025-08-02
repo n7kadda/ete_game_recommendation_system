@@ -1,8 +1,7 @@
 version: '3.8'
 services:
   jenkins:
-    # --- CHANGE IS HERE ---
-    # Instead of 'image', we use 'build' to point to your Dockerfile
+
     build: ./custom_jenkins
     container_name: jenkins-dind
     privileged: true
