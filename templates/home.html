@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Game Recommender System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Game Recommender System</h1>
+        <p class="subtitle">Enter your User ID to discover your next favorite game.</p>
+        
+        <form action="/" method="POST">
+            <input type="number" id="userID" name="userID" placeholder="e.g., 151603712" required>
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        {% if recommendations is not none and not recommendations.empty %}
+        <div class="results-container">
+            <h2>Recommended For You</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Game Title</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for index, row in recommendations.iterrows() %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ row['Recommended Game'] }}</td>
+                        <td>{{ "%.4f"|format(row['Hybrid Score']) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% elif recommendations is not none and recommendations.empty %}
+         <div class="results-container">
+            <p class="no-results">No new recommendations found for this user.</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

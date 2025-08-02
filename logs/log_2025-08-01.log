@@ -526,3 +526,127 @@ indices[0,0] = 547 is not in [0, 0)
 2025-08-01 19:08:34,897 - INFO - Weights extracted successfully for layer: user_embedding
 2025-08-01 19:08:34,900 - INFO - Weights extracted successfully for layer: game_embedding
 2025-08-01 19:08:34,958 - INFO - User and game weights saved successfully.
+2025-08-01 22:34:55,747 - INFO - Recommendation helpers loaded successfully
+2025-08-01 22:34:56,044 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 22:34:56,214 - INFO - User and game embeddings extracted successfully
+2025-08-01 22:34:56,214 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 22:34:56,214 - INFO - Generating hybrid recommendations for user: 151603712
+2025-08-01 22:34:56,254 - ERROR - Error finding similar games: 'Series' object has no attribute 'value'
+2025-08-01 22:34:56,257 - ERROR - Error finding similar games: 'Series' object has no attribute 'value'
+2025-08-01 22:34:56,259 - ERROR - Error finding similar games: 'Series' object has no attribute 'value'
+2025-08-01 22:34:56,261 - ERROR - Error finding similar games: 'Series' object has no attribute 'value'
+2025-08-01 22:34:56,264 - ERROR - Error finding similar games: 'Series' object has no attribute 'value'
+2025-08-01 22:34:56,264 - INFO - Successfully generated 10 recommendations.
+2025-08-01 22:59:30,511 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 22:59:30,687 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 22:59:30,829 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 22:59:30,830 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 22:59:30,830 - INFO - Generating hybrid recommendations for user: 151603712
+2025-08-01 22:59:30,907 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:02:42,475 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:02:42,724 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:02:42,861 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:02:42,862 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:02:42,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-08-01 23:02:42,891 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-01 23:02:42,895 - INFO -  * Restarting with stat
+2025-08-01 23:02:47,696 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:02:47,781 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:02:47,913 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:02:47,913 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:02:47,920 - WARNING -  * Debugger is active!
+2025-08-01 23:02:47,922 - INFO -  * Debugger PIN: 901-327-808
+2025-08-01 23:04:14,168 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:04:14,260 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:04:14,396 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:04:14,396 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:04:14,430 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-08-01 23:04:14,430 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-01 23:04:14,432 - INFO -  * Restarting with stat
+2025-08-01 23:04:19,031 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:04:19,127 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:04:19,270 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:04:19,270 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:04:19,277 - WARNING -  * Debugger is active!
+2025-08-01 23:04:19,279 - INFO -  * Debugger PIN: 901-327-808
+2025-08-01 23:10:01,471 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:10:01,576 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:10:01,712 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:10:01,712 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:10:01,727 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-08-01 23:10:01,727 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-01 23:10:01,728 - INFO -  * Restarting with stat
+2025-08-01 23:10:05,955 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:10:06,049 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:10:06,185 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:10:06,185 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:10:06,192 - WARNING -  * Debugger is active!
+2025-08-01 23:10:06,194 - INFO -  * Debugger PIN: 901-327-808
+2025-08-01 23:11:03,157 - INFO - 127.0.0.1 - - [01/Aug/2025 23:11:03] "GET / HTTP/1.1" 200 -
+2025-08-01 23:11:03,215 - INFO - 127.0.0.1 - - [01/Aug/2025 23:11:03] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:11:03,223 - INFO - 127.0.0.1 - - [01/Aug/2025 23:11:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-01 23:11:47,919 - INFO - Generating hybrid recommendations for user: 151603712
+2025-08-01 23:11:47,993 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:11:47,994 - INFO - 127.0.0.1 - - [01/Aug/2025 23:11:47] "POST / HTTP/1.1" 200 -
+2025-08-01 23:11:48,012 - INFO - 127.0.0.1 - - [01/Aug/2025 23:11:48] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:11:55,539 - INFO - Generating hybrid recommendations for user: 151603711
+2025-08-01 23:11:55,539 - ERROR - User '151603711' not found.
+2025-08-01 23:11:55,539 - INFO - 127.0.0.1 - - [01/Aug/2025 23:11:55] "POST / HTTP/1.1" 200 -
+2025-08-01 23:11:55,563 - INFO - 127.0.0.1 - - [01/Aug/2025 23:11:55] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:12:04,192 - INFO - Generating hybrid recommendations for user: 151603710
+2025-08-01 23:12:04,192 - ERROR - User '151603710' not found.
+2025-08-01 23:12:04,192 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:04] "POST / HTTP/1.1" 200 -
+2025-08-01 23:12:04,216 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:04] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:12:09,552 - INFO - Generating hybrid recommendations for user: 151603700
+2025-08-01 23:12:09,552 - ERROR - User '151603700' not found.
+2025-08-01 23:12:09,552 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:09] "POST / HTTP/1.1" 200 -
+2025-08-01 23:12:09,571 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:09] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:12:14,812 - INFO - Generating hybrid recommendations for user: 151603712
+2025-08-01 23:12:14,861 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:12:14,861 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:14] "POST / HTTP/1.1" 200 -
+2025-08-01 23:12:14,876 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:14] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:12:46,550 - INFO - Generating hybrid recommendations for user: 53875128
+2025-08-01 23:12:46,608 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:12:46,609 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:46] "POST / HTTP/1.1" 200 -
+2025-08-01 23:12:46,628 - INFO - 127.0.0.1 - - [01/Aug/2025 23:12:46] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:13:08,802 - INFO - Generating hybrid recommendations for user: 126340495
+2025-08-01 23:13:08,846 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:13:08,846 - INFO - 127.0.0.1 - - [01/Aug/2025 23:13:08] "POST / HTTP/1.1" 200 -
+2025-08-01 23:13:08,866 - INFO - 127.0.0.1 - - [01/Aug/2025 23:13:08] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:13:30,451 - INFO - Generating hybrid recommendations for user: 151603712
+2025-08-01 23:13:30,497 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:13:30,497 - INFO - 127.0.0.1 - - [01/Aug/2025 23:13:30] "POST / HTTP/1.1" 200 -
+2025-08-01 23:13:30,513 - INFO - 127.0.0.1 - - [01/Aug/2025 23:13:30] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-08-01 23:19:27,110 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:19:27,215 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:19:27,355 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:19:27,355 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:19:27,385 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-08-01 23:19:27,385 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-01 23:19:27,387 - INFO -  * Restarting with stat
+2025-08-01 23:19:31,765 - INFO - Loading artifacts for recommendation helpers...
+2025-08-01 23:19:31,866 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-08-01 23:19:32,009 - INFO - Recommendation helpers loaded successfully.
+2025-08-01 23:19:32,009 - INFO - Prediction pipeline initialized with recommendation helpers.
+2025-08-01 23:19:32,017 - WARNING -  * Debugger is active!
+2025-08-01 23:19:32,019 - INFO -  * Debugger PIN: 901-327-808
+2025-08-01 23:19:32,103 - INFO - Generating hybrid recommendations for user: 151603712
+2025-08-01 23:19:32,155 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:19:32,197 - INFO - 127.0.0.1 - - [01/Aug/2025 23:19:32] "POST / HTTP/1.1" 200 -
+2025-08-01 23:19:32,295 - INFO - 127.0.0.1 - - [01/Aug/2025 23:19:32] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-01 23:19:56,144 - INFO - Generating hybrid recommendations for user: 59945701
+2025-08-01 23:19:56,205 - INFO - Successfully generated 10 recommendations.
+2025-08-01 23:19:56,207 - INFO - 127.0.0.1 - - [01/Aug/2025 23:19:56] "POST / HTTP/1.1" 200 -
+2025-08-01 23:19:56,233 - INFO - 127.0.0.1 - - [01/Aug/2025 23:19:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
