@@ -4,12 +4,12 @@ pipeline{
     environment {
         VENV_DIR = 'venv'
         GCP_PROJECT = 'game-reco'
-        GCLOUD_PATH = "/var/jenkins/home/google-cloud-sdk/bin"
-        KUBECTL_AUTH_PLUGIN = "/usr/lib/google-cloud-sdk/bin"
+        GCLOUD_PATH = "/usr/lib/google-cloud-sdk/bin"
+        KUBECTL_PATH = "/usr/lib/google-cloud-sdk/bin"
     } 
 
     stages{
-        stage("Colning from github"){
+        stage("Cloning from github"){
             steps{
                 script{
                     echo 'Cloning the repository from Github'
@@ -50,10 +50,10 @@ pipeline{
                     script{
                         echo 'Build and push image to gcr'
                         sh '''
-                        export PATH=${GCLOUD_PATH}
+                        export PATH=$PATH:${GCLOUD_PATH}
                         gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}
                         gcloud config set project ${GCP_PROJECT}
-                        gclod auth configure-docker --quite
+                        gcloud auth configure-docker --quiet
                         docker build -t gcr.io/${GCP_PROJECT}/game-reco-system:latest .
                         docker push gcr.io/${GCP_PROJECT}/game-reco-system:latest
                         '''
@@ -67,7 +67,7 @@ pipeline{
                     script{
                         echo 'Deploy to Kubernetes'
                         sh '''
-                        export PATH=${GCLOUD_PATH}:${KUBECTL_AUTH_PLUGIN}
+                        export PATH=$PATH:${GCLOUD_PATH}:${KUBECTL_PATH}
                         gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}
                         gcloud config set project ${GCP_PROJECT}
                         gcloud container clusters get-credentials game-app-cluster --region us-central1
