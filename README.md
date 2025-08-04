@@ -2,6 +2,8 @@
 
 This repository contains the code for an end-to-end MLOps project that builds, trains, and deploys a hybrid game recommender system. The system learns from user playtime data to provide personalized game recommendations and is deployed as a web application using a complete CI/CD pipeline.
 
+https://n7kadda.github.io/diagram2/
+
 ## 🚀 Features
 
 - **Hybrid Recommendation Model**: Combines collaborative filtering (what similar users play) and content-based filtering (what games are similar) using a neural network-based matrix factorization model built with TensorFlow/Keras.
